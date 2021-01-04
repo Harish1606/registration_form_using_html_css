@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 0 10px;
+    background: black;
+}
+
+.wrapper{
+    max-width: 700px;
+    width: 100%;
+    background: lightgreen;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label{
+    width: 200px;
+    color: black;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid lightslategray;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;   
+}
+
+.wrapper .form .input_field .table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .form .input_field .table thead tr{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.wrapper .form .input_field .table th,
+.wrapper .form .input_field .table td{
+    padding: 12px 15px;
+}
+
+.wrapper .form .input_field .table tbody tr{
+    border-bottom: 1px solid lightgray;
+}
+
+.wrapper .form .input_field .table tbody tr:last-of-type{
+    border-bottom:2px solid lightgray;
+}
+
+.wrapper .form .input_field .table .input1{
+    width: 100%;
+    outline: none;
+    border: 1px solid lightslategray;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .table .input1:focus{
+    border: 1px solid black;
+}
+
+.wrapper .form .input_field .textarea{
+    resize: none;
+    height: 125px;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus{
+    border: 1px solid black;
+}
+
+.wrapper .form .input_field .btn{
+    width: 50%;
+    padding: 8px 10px;
+    font-size: 15px;
+    background: lightgray;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.wrapper .form .input_field .btn:hover{
+    background: silver;
+}
+
+@media(max-width:420px){
+    .wrapper .form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .input_field label{
+        margin-bottom: 5px;
+    }
+}

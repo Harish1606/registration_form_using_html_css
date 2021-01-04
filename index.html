@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+      <title>Registration Form</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <div class="wrapper">
+           <form>
+           <div class="title">
+            <h3>Registration Form</h3>
+           </div>
+           <div class="form">
+               <div class="input_field">
+                   <label>Name</label>
+                   <input type="text" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Date of birth</label>
+                <input type="date" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male" class="input" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" class="input" required>
+                <label for="female">Female</label>
+               </div>
+               <div class="input_field">
+                <label>Email-Id</label>
+                <input type="email" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Mobile number</label>
+                <input type="number" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Address</label>
+                <textarea class="textarea" required></textarea>
+               </div>
+               <div class="input_field">
+                <label>City</label>
+                <input type="text" class="input" required>
+               </div>  
+               <div class="input_field">
+                <label>Pincode</label>
+                <input type="number" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>State</label>
+                <input type="text" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Country</label>
+                <input type="text" class="input" required>
+               </div>
+               <div class="input_field">
+                <label>Hobbies</label>
+                <input type="checkbox" class="input" id="singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" class="input" id="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" class="input" id="dancing">
+                <label for="dancing">Dancing</label>
+               </div>
+               <div class="input_field">
+                   <label>Qualifications</label><br>
+                   <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Education</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10th</td>
+                                <td>
+                                    <select name="board" id="board">
+                                        <option value="stateboard">Stateboard</option>
+                                        <option value="cbse">CBSE</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="number" class="input1" required>
+                                </td>
+                                <td>
+                                    <input type="number" class="input1" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12th</td>
+                                <td>
+                                    <select name="board" id="board">
+                                        <option value="stateboard">Stateboard</option>
+                                        <option value="cbse">CBSE</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="number" class="input1" required>
+                                </td>
+                                <td>
+                                    <input type="number" class="input1" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+               <div class="input_field">
+                <input type="reset" value="Reset" class="btn">&nbsp;
+                <input type="submit" value="Submit" class="btn">
+               </div>
+           </div>
+           </form>
+       </div>
+   </body>
+</html>
